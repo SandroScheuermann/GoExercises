@@ -1,0 +1,2 @@
+# GoExercises
+Learning Go

@@ -12,12 +12,12 @@ var values = []string{"Ás", "Dois", "Três", "Quatro", "Cinco", "Seis", "Sete",
 func getStdCards() []card {
 
 	var stdCards []card
-
-	for i := 0; i < len(suits); i++ {
-		for j := 0; j < len(values); j++ {
-			stdCards = append(stdCards, card(values[j]+ " de " +suits[i]))
-		}
-	}
+    
+    for _, suit := range suits{
+        for _, value := range values{
+            stdCards = append(stdCards, card(value + " de " + suit))
+        }
+    }
 
 	return stdCards
 }

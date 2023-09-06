@@ -1,20 +1,9 @@
 package main
 
-
 func main() {
 
-	paragraph()
+    superBaralhoImportado := readDeckJson()
 
-	shuffledDeck := getStandartShuffledDeck()
-	shuffledDeck.print()
+    superBaralhoImportado.print()
 
-	paragraph()
-
-	hand, shuffledDeck := shuffledDeck.getStdGameHand()
-
-	shuffledDeck.print()
-
-	paragraph()
-
-    hand.showHand()
 }
